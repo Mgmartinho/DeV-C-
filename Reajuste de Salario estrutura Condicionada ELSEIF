@@ -1,0 +1,44 @@
+#include<stdio.h>
+
+float sal,reaj,reaj1,reaj2,reaj3,reaj4,aumento,aumento1,aumento2,aumento3,aumento4;
+
+int main(){
+printf("DIGITE O VALOR DO SEU SALARIO:\n");
+scanf("%f",&sal);
+
+if(sal>0 && sal<=400.00){
+	reaj=sal+(sal*0.15);
+	aumento=sal*0.15;
+	printf("VALOR DO REAJUSTE E: %.2f\n",aumento);
+	printf("O AUMENTO NO SALARIO COM 15 PORCENTO DE AUMENTO E: %.2f\n",reaj);
+}	
+else if(sal>400.01 && sal<=800.00){
+	reaj1=sal+(sal*0.12);
+	aumento1=sal*0.12;
+	printf("VALOR DO REAJUSTE E: %.2f\n",aumento1);
+	printf("O AUMENTO NO SALARIO COM 12 PORCENTO DE AUMENTO E: %.2f\n",reaj1);
+}
+	
+else if(sal>800.01 && sal<=1200.00){
+	aumento2=sal*0.10;
+	reaj2=sal+(sal*0.10);
+	printf("VALOR DO REAJUSTE E: %.2f\n",aumento2);
+	printf("O AUMENTO NO SALARIO COM 10 PORCENTO DE AUMENTO E:: %.2f\n",reaj2);	
+}
+else if(sal>1200.01 && sal<=2000.00){
+	aumento3=sal*0.07;
+	reaj3=sal+(sal*0.07);
+	printf("VALOR DO REAJUSTE E: %.2f\n",aumento3);
+	printf("O AUMENTO NO SALARIO COM 7 PORCENTO DE AUMENTO E: %.2f\n",reaj3);	
+}	
+else if(sal>2000.00){
+	aumento4=sal*0.04;
+	reaj4=sal+(sal*0.04);
+	printf("VALOR DO REAJUSTE E: %.2f\n",aumento4);
+	printf("O AUMENTO NO SALARIO COM 4 PORCENTO DE AUMENTO E: %.2f\n",reaj4);	
+}	
+else{
+	printf("VALOR INVALIDO\n");
+}	
+return 0;	
+}
