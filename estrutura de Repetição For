@@ -1,0 +1,22 @@
+#include<stdio.h>///estrutura de repetição
+
+int i,num,mult;///laço sempre int
+
+
+
+int main(){
+printf("Digite o Numero a ser Multiplicado\n");
+scanf("%d",&num);
+for(i=0;i<=10;i++){
+///i++ soma de um em um///i+=2 soma de 2 em 2 e assim por diante....
+mult=i*num;	
+printf("\n%dx%d=%d\n",i,num,mult);
+
+	
+	
+}//for
+
+	
+return 0;	
+	
+}
