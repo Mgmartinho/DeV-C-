@@ -1,0 +1,113 @@
+#include<stdio.h>////inclui bibliotecas
+#include<math.h>/////inclui biblioteca de matematica
+
+int/////variaveis de valores inteiros
+float////variaveis de valores reais
+char/////variaveis de caracteres, [40] numero de caracteres dentro da variavel.
+////para variaveis com uma unica letra utilizar % c
+//use %f para variável float
+//use %lf para variável double
+//use %d para variável int
+//use %c para variável char (um único caractere)
+//use %s para variável char (cadeia de caracteres sem espaço)
+//use %[^\n] para variável char (cadeia de caracteres com espaço]
+*******************************************************************
+//// exemplos VARIAVEIS
+printf("Digite sua idade\n");
+scanf("%d",&idade);
+printf("\nDigite seu peso\n");
+scanf("%f",&peso);
+printf("\nDigite seu sexo\n");
+scanf(" %c",&sexo);
+printf("\nDigite seu nome\n");
+scanf(" %[^\n]",&nome);
+******************************************************************
+//MATH.H
+qua=pow(n,2);
+cubo=pow(n,3);
+raiz=sqrt(n);
+raizc=cbrt(n);
+rc=pow(n,1.0/3.0); // calcular qualquer outra raiz
+/// EXEMPLOS
+printf("\nO número: %.2f ao quadrado é: %.2f\n",n,qua);
+printf("\nO número: %.2f ao cubo é: %.2f\n",n,cubo);
+printf("\nA raiz do número: %.2f é: %.2f\n",n,raiz);
+printf("\nA raiz cúbica do número: %.2f é: %.2f\n",n,raizc);
+printf("\nA raiz cúbica do número: %.2f é: %.2f\n",n,rc);
+return 0;
+
+******************************************************************
+///EXPRESSÕES LÓGICAS
+Expressões Lógicas
+== igual
+> maior
+< menor
+>= maior ou igual
+<= menor ou igual
+!= diferente
+********************************************************************
+IF/ELSE
+if (condição){
+linhas de comando
+}
+else{
+linhas de comando
+}
+******************************************************************
+Tabela Verdade para “&&” (e) Tabela Verdade para “||” (ou)
+1ª && 2ª = resp 1ª || 2ª = resp
+V && V = V                V || V = V
+V && F = F                V || F = V
+F && V = F                F || V = V
+F && F = F                F || F = F
+******************************************************************
+//EXEMPLO SWITCH/CASE
+#include <stdio.h>
+int n;
+int main(){
+printf("Digite um numero\n");
+scanf("%d",&n);
+switch(n){
+case -10 ... 0:
+printf("\nNumero esta no intervalo entre -10 e 0\n");
+break;
+case 1 ... 11:
+printf("\nNumero esta no intervalo entre 1 e 11\n");
+break;
+case 12 ... 24:
+printf("\nNumero esta no intervalo entre 12 e 24\n");
+break;
+case 25:
+printf("\nNumero e igual a 25\n");
+break;
+default:
+printf("\nValor invalido\n");
+} //switch
+return 0; }
+*******************************************************************
+///ESTRUTURA DE REPETIÇÃO FOR
+#include<stdio.h>
+int i;
+float c;
+int main(){
+for(i=50;i<=65;i++){
+c = 0.56 * (i - 32);
+printf("\nA temperatura em Celsius é: %2f\n",c);
+}
+return 0;
+}
+/////////////////RESOLUÇÃO
+#include<stdio.h>
+int i,n;
+int main(){
+do{
+printf("Digite um número inteiro\n");
+scanf("%d",&n);
+}
+while(n<=0);
+for(i=n;i>=0;i--){
+printf("\n%d\n",i);
+}
+return 0;
+}
+*****************************************************************
