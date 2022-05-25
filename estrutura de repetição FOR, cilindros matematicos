@@ -1,1 +1,30 @@
+#include<stdio.h>
 
+int i,n,id;
+float raio,altura,vol,maior;
+
+int main(){
+	
+printf("quantos alunos tem na sala\n ");
+scanf("%d",&n);
+
+for(i=1;i<=n;i++){
+printf("escreva o Raio\n ");
+scanf("%f",&raio);	
+printf("escreva a altura\n");
+scanf("%f",&altura);
+
+
+
+vol=3.141592*raio*raio*altura;
+printf("\nO VOLUME DO CILINDO E %.2f\n",vol);
+
+if(vol>maior){
+	maior=vol; ///valor do maior volume 
+	id=i; /////quem é o aluno que tem o maior volume de cilindo
+}//if
+}//for
+
+printf("\nO MAIOR VOLUME DO CILINDRO E %.2f e PERTENCE AO ALUNO %d\n",maior,id);
+return 0;
+}
